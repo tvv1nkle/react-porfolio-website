@@ -5,6 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Ibarra Real Nova', serif;
+}
+
+h1{
+  font-weight: 900;
+  font-size: 45px;
+  color:black;
+}
+
+h2{
+  font-weight: 700;
+  font-size: 23px;
+  color:black;
+}
+
+p {
+  font-weight: 500;
+  font-size: 21px;
+  color:black;
 }
 
 code {
