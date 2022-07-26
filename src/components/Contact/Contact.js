@@ -8,7 +8,7 @@ const handleURL = (url) => {
 
 const Contact = () => {
     return ( 
-        <div className={classes.Contact}>
+        <div className={classes.Contact} id="Contact">
             <h1>Contact</h1>
             <FaGithub color='black' size='50px' style={{padding: '1%'}}
             onClick={handleURL('https://github.com/tvv1nkle')} />

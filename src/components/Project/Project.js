@@ -3,7 +3,7 @@ import classes from './Project.module.css'
 
 const Project = () => {
     return (
-        <div>
+        <div className={classes.Project} id="Project">
             <PageHeader title={"My Project"} />
             <h2><a href="https://tvv1nkle.github.io/ColmarAcademy/" target="_blank" rel="noreferrer">
                 • Codecademy build website using HTML and CSS for education Colmar Academy
