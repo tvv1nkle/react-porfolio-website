@@ -1,22 +1,98 @@
 import PageHeader from './../PageHeader/PageHeader';
 import classes from './Project.module.css'
+import teaandcozy from './teaandcozy.jpg'
+import restaurant from './restaurant.png'
+import colmar from './colmar.png'
+import jamming from './Jamming.png'
 
-const Project = () => {
-    return (
-        <div className={classes.Project} id="Project">
-            <PageHeader title={"My Project"} />
-            <h2><a href="https://tvv1nkle.github.io/ColmarAcademy/" target="_blank" rel="noreferrer">
-                • Codecademy build website using HTML and CSS for education Colmar Academy
-            </a></h2>
-            <h2><a href="https://tvv1nkle.github.io/restaurant/" target="_blank" rel="noreferrer">
-                • Build restaurant reservation website using HTML
-            </a></h2>
-            <h2><a href="https://tvv1nkle.github.io/TeaAndCozyCodeCa/" target="_blank" rel="noreferrer">
-                • Create bakery website using HTML and CSS Tea and Cozy Codeacademy Project
-            </a></h2>
-        </div>
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
-    );
+export default function Project() {
+  return (
+    <div className={classes.Project} id="Project">
+        <PageHeader title={"My Project"} />
+    <Card sx={{ maxWidth: 500 , boxShadow: 1,bgcolor:'rgb(249, 215, 184)',display: 'flex', flexDirection: 'column', margin: '0px auto' }}>
+      <CardMedia
+        component="img"
+        height="200"
+        image={colmar}
+        alt="Colmar Academy"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        Colmar Academy
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        • Codecademy build website using HTML and CSS for education Colmar Academy
+        </Typography>
+      </CardContent>
+      <CardActions>
+      <Button href ="https://github.com/tvv1nkle/ColmarAcademy" target="_blank" rel="noreferrer" size="small">Github</Button>
+    <Button href="https://tvv1nkle.github.io/ColmarAcademy/" target="_blank" rel="noreferrer" size="small">PROJECT</Button>
+      </CardActions>
+      <CardMedia
+        component="img"
+        height="200"
+        image={restaurant}
+        alt="restaurant"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        Restaurant
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        • Build restaurant reservation website using HTML 
+        </Typography>
+      </CardContent>
+      <CardActions>
+      <Button href ="https://github.com/tvv1nkle/restaurant" target="_blank" rel="noreferrer" size="small">Github</Button>
+    <Button href="https://tvv1nkle.github.io/restaurant/" target="_blank" rel="noreferrer" size="small">PROJECT</Button>
+      </CardActions>
+      <CardMedia
+        component="img"
+        height="200"
+        image={teaandcozy}
+        alt="Tea and Cozy"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        Tea and Cozy
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        • Create bakery website using HTML and CSS Tea and Cozy Codeacademy Project 
+        </Typography>
+      </CardContent>
+      <CardActions>
+      <Button href ="https://github.com/tvv1nkle/TeaAndCozyCodeCa" target="_blank" rel="noreferrer" size="small">Github</Button>
+    <Button href="https://tvv1nkle.github.io/TeaAndCozyCodeCa/" target="_blank" rel="noreferrer" size="small">PROJECT</Button>
+      </CardActions>
+      <CardMedia
+        component="img"
+        height="200"
+        image={jamming}
+        alt="Jamming"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        Jamming
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        • Create React app for creating new playlists with Spotify 
+        </Typography>
+      </CardContent>
+      <CardActions>
+      <Button href ="https://github.com/tvv1nkle/Jammming" target="_blank" rel="noreferrer" size="small">Github</Button>
+    <Button href="" target="_blank" rel="noreferrer" size="small">PROJECT</Button>
+      </CardActions>
+    </Card>
+    </div>
+    
+  );
 }
 
-export default Project;

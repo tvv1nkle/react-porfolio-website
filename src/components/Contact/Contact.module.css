@@ -1,13 +1,11 @@
 .Contact {
     background-color: rgb(206, 224, 246);
     height: 300px;
-    align-items: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .Contact .ContactIcons {
     width: 100%;
-    display: flex;
     justify-content: center;
 }
 
