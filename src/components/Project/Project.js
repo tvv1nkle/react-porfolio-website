@@ -4,6 +4,8 @@ import teaandcozy from './teaandcozy.jpg'
 import restaurant from './restaurant.png'
 import colmar from './colmar.png'
 import jamming from './Jamming.png'
+import fitfriends from './fitfriends.png'
+import blender from './Blender.jpg'
 
 import * as React from 'react';
 import Card from '@mui/material/Card';
@@ -89,6 +91,42 @@ export default function Project() {
       <CardActions>
       <Button href ="https://github.com/tvv1nkle/Jammming" target="_blank" rel="noreferrer" size="small">Github</Button>
     <Button href="" target="_blank" rel="noreferrer" size="small">PROJECT</Button>
+      </CardActions>
+      <CardMedia
+        component="img"
+        height="200"
+        image={fitfriends}
+        alt="Fitfriends"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        Fitfriends
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        • Create Excercise tracker using MERN Stack 
+        </Typography>
+      </CardContent>
+      <CardActions>
+      <Button href ="https://github.com/tvv1nkle/fitfriends-frontend" target="_blank" rel="noreferrer" size="small">Github</Button>
+    <Button href="https://fitfriend-frontend-deploy.vercel.app/" target="_blank" rel="noreferrer" size="small">PROJECT</Button>
+      </CardActions>
+      <CardMedia
+        component="img"
+        height="200"
+        image={blender}
+        alt="blender"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        Blender
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        • Using blender create 3d model from The sims
+        </Typography>
+      </CardContent>
+      <CardActions>
+      <Button href ="https://github.com/tvv1nkle/blender-render-model" target="_blank" rel="noreferrer" size="small">Github</Button>
+    <Button href="https://github.com/tvv1nkle/blender-render-model" target="_blank" rel="noreferrer" size="small">PROJECT</Button>
       </CardActions>
     </Card>
     </div>
